@@ -5,10 +5,8 @@ import java.io.IOException;
 
 public class CreateCSV {
     private static void generateCsvFile(String fileName) {
-
         FileWriter writer = null;
         try {
-
             writer = new FileWriter(fileName);
             writer.append("Init_date");
             writer.append(',');
@@ -19,16 +17,16 @@ public class CreateCSV {
             writer.append("Values");
             writer.append('\n');
 
-            writer.append("2000-07-15");
+            writer.append("2000-03-15");
             writer.append(',');
-            writer.append("2000-07-16");
+            writer.append("2000-03-17");
             writer.append(',');
-            writer.append("2");
+            writer.append("1");
             writer.append(',');
-            writer.append("$2200");
+            writer.append("$6200");
             writer.append('\n');
 
-//            writer.append("2000-02-25");
+//            writer.append("2000-03-25");
 //            writer.append(',');
 //            writer.append("");
 //            writer.append(',');
@@ -53,7 +51,7 @@ public class CreateCSV {
 
     public static void main(String[] args) {
 
-        String location = "C:\\Transactions\\2000\\Jan-Mar\\2000-02-25.csv";
+        String location = "C:\\Transactions\\2000\\Jan-Mar\\2000-03-15.csv";
         generateCsvFile(location);
 
     }
