@@ -90,5 +90,8 @@ public class ReadData {
     {
         return new ConsoleItemWriter<transaction>();
     }
-
+    public static void main(String args[])
+    {
+        ReadData rd = new ReadData();
+    }
 }
