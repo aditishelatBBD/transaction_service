@@ -71,6 +71,5 @@ public class CreateCSV {
 
         String location = "C:\\Transactions\\2001\\Jan-Mar\\2001-01-15.csv";
         generateCsvFile(location);
-
     }
 }
